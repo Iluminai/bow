@@ -2,6 +2,7 @@ defmodule Bow.Storage.Local do
   @behaviour Bow.Storage
 
   defp prefix, do: Application.get_env(:bow, :storage_prefix, "tmp/bow")
+  defp serve_from_path, do: Application.get_env(:bow, :serve_from_path, "/public/")
 
   @impl true
   def store(file_path, dir, name, _opts) do
@@ -44,7 +45,7 @@ defmodule Bow.Storage.Local do
 
   @impl true
   def url(dir, name, _opts) do
-    Path.join([prefix(), dir, name])
+    Path.join([serve_from_path(), dir, name])
   end
 
   def reset! do
