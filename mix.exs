@@ -44,7 +44,7 @@ defmodule Bow.Mixfile do
 
   def application do
     [
-      extra_applications: [:logger, :plug, :tesla, :hackney]
+      extra_applications: [:logger]
     ]
   end
 
