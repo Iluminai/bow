@@ -7,6 +7,7 @@ defmodule Bow do
       config :bow,
         storage: Bow.Storage.Local,             # storage adapter; Bow.Storage.Local or Bow.Storage.S3
         storage_prefix: "priv/static/uploads",  # storage directory prefix
+        serve_from_path: "/public/"             # when creating URLs, use this path for where to serve content from relative to site root
 
         store_timeout:  30_000,                 # single version upload timeout
         exec_timeout:   15_000,                 # single command execution timeout
