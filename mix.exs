@@ -57,11 +57,11 @@ defmodule Bow.Mixfile do
       {:tesla, "~> 1.3"},
       {:ecto, "~> 3.6", optional: true},
       {:ecto_sql, "~> 3.6", optional: true},
-      {:erlexec, "~> 1.9", optional: true},
+      {:erlexec, "~> 1.19", optional: true},
       {:ex_aws, "~> 2.2", optional: true},
       {:ex_aws_s3, "~> 2.2", optional: true},
       {:hackney, "~> 1.17"},
-      {:sweet_xml, "~> 0.6.5", optional: true},
+      {:sweet_xml, "~> 0.7", optional: true},
 
       # testing & docs
       {:postgrex, ">= 0.0.0", only: :test},
