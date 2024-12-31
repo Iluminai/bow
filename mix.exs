@@ -1,7 +1,7 @@
 defmodule Bow.Mixfile do
   use Mix.Project
 
-  @version "0.4.0"
+  @version "0.4.1"
 
   def project do
     [
@@ -57,7 +57,7 @@ defmodule Bow.Mixfile do
       {:tesla, "~> 1.3"},
       {:ecto, "~> 3.6", optional: true},
       {:ecto_sql, "~> 3.6", optional: true},
-      {:erlexec, "~> 1.19", optional: true},
+      {:erlexec, "~> 2.0", optional: true},
       {:ex_aws, "~> 2.2", optional: true},
       {:ex_aws_s3, "~> 2.2", optional: true},
       {:hackney, "~> 1.17"},
