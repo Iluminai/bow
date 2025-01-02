@@ -2,6 +2,10 @@
 
 ## v0.4.0
 
+* Bumped erlexec dependency to ~> 2.0
+
+## v0.4.0
+
 * Updated to use Elixir 1.11 as minimum and other libraries, updated configuration to silence warnings
 * Added support for separate configuration option `serve_from_path` to specify where to serve content from relative to the website root
 
